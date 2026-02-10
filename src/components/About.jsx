@@ -6,19 +6,19 @@ import React from "react";
 const About = () => {
   const stats = [
     {
-      label: "CURATED ROOM SIZE",
-      value: "200–250",
-      body: "Large enough for serendipity, small enough that every conversation can matter.",
+      label: "EVENT CAPACITY",
+      value: "450–500",
+      body: "A curated gathering of ABESEC students and participants from other colleges.",
     },
     {
       label: "WHO IT'S FOR",
-      value: "Founders & builders",
-      body: "People actively shipping, raising, hiring, or backing ambitious products.",
+      value: "Students & Aspiring Entrepreneurs",
+      body: "All students from ABES Engineering College and participants from other institutions.",
     },
     {
       label: "FORMAT",
-      value: "1 night",
-      body: "A single, dense evening that trades panels and booths for real signal.",
+      value: "1 Day Event",
+      body: "A full-day experience featuring speaker sessions, pitches, quizzes, and networking.",
     },
   ];
 
@@ -30,25 +30,25 @@ const About = () => {
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         {/* Heading and core narrative */}
         <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-gray-400">
-          ABOUT THE ENTREPRENEURSHIP SHOW
+          ABOUT TES 4.0
         </p>
         <h2
           id="about-heading"
           className="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white"
         >
-          A live, unfiltered look at how modern companies actually get built.
+          Inspiring the Next Generation of Entrepreneurs
         </h2>
         <p className="mt-4 max-w-2xl text-base sm:text-lg text-gray-300">
-          The Entrepreneurship Show is a stage for the people doing the work —
-          founders, operators and investors who are in the arena right now. No
-          generic keynotes, no buzzword bingo, just clear stories, real
-          numbers, and the decisions behind them.
+          TES (The Entrepreneurship Show) is a prestigious annual event organized by the
+          Entrepreneurship Cell of ABES Engineering College (ABESEC). This grand event invites
+          both budding and successful startups to share their experiences, including the challenges
+          and triumphs they have faced on their entrepreneurial journeys.
         </p>
         <p className="mt-3 max-w-2xl text-base sm:text-lg text-gray-400">
-          You&apos;ll leave with sharper instincts, new collaborators, and a
-          concrete sense of what &quot;good&quot; looks like in your next
-          chapter — whether that&apos;s starting, scaling, or backing what
-          comes next.
+          Our mission is to inspire and empower students to pursue their entrepreneurial
+          aspirations. Through speaker sessions, panel discussions, business quizzes, and
+          live pitch competitions, we aim to create awareness, clarify doubts about startups
+          and funding, and encourage the entrepreneurial spirit among students.
         </p>
 
         {/* Stats / highlight cards */}
@@ -71,8 +71,7 @@ const About = () => {
 
         {/* Closing line */}
         <p className="mt-10 text-sm font-semibold text-gray-500">
-          This isn&apos;t a conference. It&apos;s a live show for people who
-          can&apos;t not build.
+          Organized by Entrepreneurship Cell, ABES Engineering College
         </p>
       </div>
     </section>

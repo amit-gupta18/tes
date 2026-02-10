@@ -7,34 +7,64 @@ const Timeline = () => {
   // Static agenda items for the event
   const agenda = [
     {
-      time: "4:30 PM",
-      title: "Doors open & founder check-in",
+      time: "9:00 AM",
+      title: "Registrations & Seating",
       description:
-        "Early arrivals get first access to front-row seating and curated intros based on what they’re building.",
+        "Check in at the reception desk, collect your event materials, and find your seat. Network with early arrivals before the show begins.",
     },
     {
-      time: "5:00 PM",
-      title: "Cold start: inside the first 10 users",
+      time: "9:30 AM",
+      title: "Opening Ceremony",
       description:
-        "A live reverse-engineering of how breakout products found their first fans — featuring real onboarding flows and outreach copy.",
+        "Welcome address and introduction to The Entrepreneurship Show 4.0. Get ready for an inspiring day of innovation and collaboration.",
     },
     {
-      time: "6:00 PM",
-      title: "Capital on stage",
+      time: "9:50 AM",
+      title: "Speaker Session 1 (with Q&A)",
       description:
-        "VCs and angels share exactly what they shipped with their best investments: conviction, timing, and uncomfortable calls.",
+        "Our first keynote speaker shares insights on building successful startups, followed by an interactive Q&A session.",
     },
     {
-      time: "7:00 PM",
-      title: "Live teardown: the unraised deck",
+      time: "10:45 AM",
+      title: "Speaker Session 2",
       description:
-        "A founder walks through the deck that didn’t close, then the version that did — with line-by-line feedback.",
+        "Industry leaders discuss the latest trends in entrepreneurship, technology, and innovation shaping the future.",
     },
     {
-      time: "8:00 PM",
-      title: "Hallway sessions & private intros",
+      time: "11:35 AM",
+      title: "Pitch Ground",
       description:
-        "Curated matches between founders, operators and investors, with quiet corners for honest conversations.",
+        "Watch aspiring founders pitch their groundbreaking ideas. Witness the next generation of startups compete for recognition and funding.",
+    },
+    {
+      time: "12:35 PM",
+      title: "Lunch Break",
+      description:
+        "Enjoy curated meals while networking with fellow entrepreneurs, investors, and industry professionals in a relaxed setting.",
+    },
+    {
+      time: "1:25 PM",
+      title: "Business Quiz",
+      description:
+        "Test your entrepreneurial knowledge in this engaging quiz competition. Prizes await the sharpest minds in the room.",
+    },
+    {
+      time: "2:35 PM",
+      title: "Panel Discussion",
+      description:
+        "A diverse panel of founders, VCs, and operators dive deep into real challenges and opportunities in today's startup ecosystem.",
+    },
+    {
+      time: "3:25 PM",
+      title: "Speaker Session 3",
+      description:
+        "Our final speaker brings powerful insights and actionable strategies to help you accelerate your entrepreneurial journey.",
+    },
+    {
+      time: "4:20 PM",
+      title: "Prize Distribution & Closing Ceremony",
+      description:
+        "Celebration of winners from the pitch competition and business quiz, followed by closing remarks and networking opportunities.",
     },
   ];
 
