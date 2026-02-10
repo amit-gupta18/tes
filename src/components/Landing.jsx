@@ -77,37 +77,68 @@ const Landing = () => {
 
       {/* Hero content */}
       <section className="relative z-10 flex min-h-screen items-center">
-        <div className="relative mx-auto flex w-full max-w-5xl flex-col px-4 py-24 sm:px-8 md:px-10 lg:px-0">
-          {/* Top label */}
-          <p className="mb-6 max-w-xs text-xs font-medium uppercase tracking-[0.2em] text-gray-400">
-            A LIVE STAGE FOR FOUNDERS, BUILDERS & INVESTORS
+        <div className="relative mx-auto flex w-full max-w-5xl flex-col px-4 py-24 sm:px-8 md:px-10 lg:px-0 lg:pr-40">
+          {/* Top label (neon pill + rocket icon) */}
+          <p
+            className="mb-7 inline-flex w-max items-center gap-2 rounded-full border border-[#F44A22]/50 bg-black/60 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-gray-200"
+            style={{
+              boxShadow:
+                "0 0 0 1px rgba(244,74,34,0.18), 0 0 24px rgba(244,74,34,0.18)",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#F44A22]/40 bg-black/70"
+              style={{ boxShadow: "0 0 18px rgba(244,74,34,0.25)" }}
+            >
+              {/* Inline rocket icon (no external libs) */}
+              <svg
+                viewBox="0 0 24 24"
+                className="h-3.5 w-3.5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.5 3.5c3.2.4 6 3.2 6 6.4 0 1.6-.6 3.4-1.8 4.8l-3 3c-.5.5-1.1.7-1.8.7h-3.1l-2.5 2.5c-.3.3-.8.2-.9-.2l-.7-2.8-2.8-.7c-.4-.1-.5-.6-.2-.9l2.5-2.5V11.7c0-.7.3-1.3.7-1.8l3-3c1.4-1.2 3.2-1.8 4.8-1.4Z"
+                  stroke="#F44A22"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M12.6 7.4a2.2 2.2 0 1 0 3.1 3.1 2.2 2.2 0 0 0-3.1-3.1Z"
+                  stroke="#F44A22"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </span>
+            WORLD&apos;S ELITE STARTUP SUMMIT 2026
           </p>
 
           {/* Main headline */}
           <h1
             id="hero-heading"
-            className="relative z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight tracking-tight max-w-3xl"
+            className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[0.95] tracking-tight max-w-3xl"
           >
-            THE{" "}
-            <span className="inline-block">
-              <span className="mr-1">E</span>
-              <span
-                className="bg-gradient-to-r from-[#F44A22] to-[#F44A22]/60 bg-clip-text text-transparent italic"
-                style={{ textShadow: "0 0 24px rgba(244,74,34,0.45)" }}
-              >
-                NTREPRENEURSHIP
-              </span>
-            </span>{" "}
-            SHOW
+            <span className="block text-white">THE</span>
+            <span
+              className="block italic text-[#F44A22]"
+              style={{ textShadow: "0 0 28px rgba(244,74,34,0.35)" }}
+            >
+              ENTREPRENEURSHIP
+            </span>
+            <span className="block text-white">SHOW</span>
           </h1>
 
-          {/* Subtext / meta */}
-          <p className="mt-6 text-xs sm:text-sm md:text-base font-medium tracking-[0.25em] text-gray-400">
-            FEBRUARY 21ST, 2026 &nbsp; | &nbsp; SILICON VALLEY
+          {/* Subtext (match reference copy style) */}
+          <p className="mt-4 max-w-2xl text-base sm:text-lg text-gray-300">
+            Connect with the architects of the future.{" "}
+            <span className="font-semibold text-white">Pitch.</span>{" "}
+            <span className="font-semibold text-white">Partner.</span>{" "}
+            <span className="font-semibold text-white">Prevail.</span>
           </p>
 
           {/* Countdown row */}
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-4 flex flex-wrap gap-4">
             {[
               { label: "DAYS", value: timeLeft.days },
               { label: "HRS", value: timeLeft.hours },
@@ -116,52 +147,47 @@ const Landing = () => {
             ].map((item) => (
               <div
                 key={item.label}
-                className="flex min-w-[72px] flex-col items-center justify-center rounded-xl border border-gray-800 bg-gray-900/50 px-4 py-3 shadow-[0_0_30px_rgba(0,0,0,0.9)]"
+                className={[
+                  "flex min-w-[84px] flex-col items-center justify-center rounded-2xl border px-4 py-4 shadow-[0_0_30px_rgba(0,0,0,0.9)]",
+                  item.label === "SEC"
+                    ? "border-[#F44A22]/20 bg-[#F44A22] text-black"
+                    : "border-gray-800 bg-[#121212] text-white",
+                ].join(" ")}
               >
-                <span className="text-xl sm:text-2xl font-semibold tracking-tight">
+                <span className="text-2xl sm:text-3xl font-extrabold tracking-tight">
                   {item.value}
                 </span>
-                <span className="mt-1 text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.2em] text-gray-400">
+                <span
+                  className={[
+                    "mt-2 text-[0.65rem] uppercase tracking-[0.22em]",
+                    item.label === "SEC" ? "text-black/70" : "text-gray-500",
+                  ].join(" ")}
+                >
                   {item.label}
                 </span>
               </div>
             ))}
           </div>
 
-          {/* CTA tag pills */}
-          <div className="mt-8 flex flex-wrap gap-3">
-            {["#TECH", "#VC", "#INNOVATION", "#FOUNDERS", "#FUTUREOFWORK"].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full border border-gray-800 bg-gray-900/40 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-gray-200 shadow-[0_0_30px_rgba(0,0,0,0.9)]"
-                >
-                  {tag}
-                </span>
-              )
-            )}
-          </div>
+          {/* Primary CTA + small meta (match reference structure) */}
+          <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
+            <a
+              className="inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-[#F44A22] px-8 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-black shadow-[0_0_50px_rgba(244,74,34,0.35)] transition hover:bg-[#f35b37] sm:w-auto"
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=Dn_YOpMfvUGU9ILDfZcciI684JB80VRGkdlg2YpjF7dUNkdGVTBRSU1ETUc3VFRKVlMzOTBBNVg1TC4u&origin=QRCode"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              JOIN THE REVOLUTION
+              <span aria-hidden="true" className="text-lg">
+                →
+              </span>
+            </a>
 
-          {/* Supporting copy + primary CTA */}
-          <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-            <p className="max-w-xl text-sm text-gray-300">
-              A one-night live show where high-conviction founders, operators,
-              and investors collide. No conference fluff — just sharp ideas,
-              real stories, and the kind of conversations that start companies.
-            </p>
-            <div className="flex gap-4">
-              <button
-                type="button"
-                className="rounded-full border border-transparent bg-[#F44A22] px-6 py-2.5 text-xs sm:text-sm font-semibold tracking-[0.16em] text-black shadow-[0_0_40px_rgba(244,74,34,0.5)] transition hover:bg-[#f35b37]"
-              >
-                REQUEST INVITE
-              </button>
-              <button
-                type="button"
-                className="rounded-full border border-gray-700 bg-black/70 px-6 py-2.5 text-xs sm:text-sm font-medium tracking-[0.16em] text-gray-200 transition hover:border-gray-500"
-              >
-                VIEW PAST SHOW
-              </button>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-white">247 Seats Left</p>
+              <p className="mt-1 text-[0.7rem] font-medium uppercase tracking-[0.2em] text-gray-500">
+                of 500 exclusive invites
+              </p>
             </div>
           </div>
         </div>
@@ -171,5 +197,7 @@ const Landing = () => {
 };
 
 export default Landing;
+
+
 
 

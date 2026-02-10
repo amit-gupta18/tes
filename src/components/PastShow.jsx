@@ -5,7 +5,7 @@ import React from "react";
 
 const PastShow = () => {
   const darkCard =
-    "rounded-[30px] border border-gray-800 bg-[#050505]/95 shadow-[0_0_40px_rgba(0,0,0,0.9)]";
+    "rounded-2xl border border-gray-800 bg-[#050505]/95 shadow-[0_0_40px_rgba(0,0,0,0.9)]";
 
   return (
     <section
@@ -58,10 +58,10 @@ const PastShow = () => {
           {/* Large image-style card (left, full height) */}
           <article className={`${darkCard} h-full overflow-hidden`}>
             <div className="relative h-full w-full">
-              <div className="h-full w-full bg-gradient-to-t from-[#F44A22]/70 via-[#F44A22]/30 to-black" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,74,34,0.5),_transparent_55%)] opacity-80" />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black via-black/60 to-transparent" />
+              <div className="h-full w-full bg-linear-to-t from-[#F44A22]/70 via-[#F44A22]/30 to-black" />
+              <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(244,74,34,0.5),transparent_55%)] opacity-80" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-black via-black/60 to-transparent" />
 
               <div className="pointer-events-auto absolute bottom-4 left-4 right-4 flex flex-col gap-3 text-left">
                 <span className="inline-flex w-max items-center rounded-full bg-black/70 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-white">
@@ -104,7 +104,7 @@ const PastShow = () => {
             {/* Bottom row: two cards side by side */}
             <div className="grid flex-1 grid-cols-2 gap-4">
               {/* Bright accent card */}
-              <article className="flex h-full flex-col justify-between rounded-[30px] bg-[#F44A22] px-4 py-4 text-black shadow-[0_0_40px_rgba(244,74,34,0.5)]">
+              <article className="flex h-full flex-col justify-between rounded-2xl bg-[#F44A22] px-4 py-4 text-black shadow-[0_0_40px_rgba(244,74,34,0.5)]">
                 <div>
                   <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-black/70">
                     NETWORKING MIXER 2024

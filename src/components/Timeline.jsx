@@ -115,7 +115,7 @@ const Timeline = () => {
         {/* Right: QR registration + location */}
         <aside className="w-full max-w-sm self-start space-y-4 lg:space-y-5">
           {/* QR card */}
-          <div className="rounded-[32px] bg-[#F44A22] p-5 text-black shadow-[0_0_40px_rgba(244,74,34,0.6)]">
+          <div className="rounded-2xl bg-[#F44A22] p-5 text-black shadow-[0_0_40px_rgba(244,74,34,0.6)]">
             <p className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-black/70">
               REGISTER QUICKLY
             </p>
@@ -128,7 +128,7 @@ const Timeline = () => {
               <img
                 src="/qr.jpeg"
                 alt="QR code to register for The Entrepreneurship Show"
-                className="h-auto w-full rounded-xl object-contain"
+                className="h-auto w-full rounded-lg object-contain"
               />
             </div>
 
@@ -143,7 +143,7 @@ const Timeline = () => {
           </div>
 
           {/* Location card */}
-          <div className="rounded-[28px] border border-gray-800 bg-[#050505] p-5 text-left shadow-[0_0_30px_rgba(0,0,0,0.9)]">
+          <div className="rounded-2xl border border-gray-800 bg-[#050505] p-5 text-left shadow-[0_0_30px_rgba(0,0,0,0.9)]">
             <p className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-gray-400">
               VENUE LOCATION
             </p>
