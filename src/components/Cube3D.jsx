@@ -54,10 +54,15 @@ const Cube3D = () => {
       >
         {/* Front */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-[#F44A22]/70 bg-[#F44A22]/5 text-sm font-semibold tracking-wide text-gray-50"
+          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#F44A22]/70 bg-[#F44A22]/5 text-sm font-semibold tracking-wide text-gray-50"
           style={{
             ...faceBase,
             transform: `translateZ(${depth}px)`,
+            boxShadow: `
+              inset -2px -2px 6px rgba(0, 0, 0, 0.5),
+              inset 2px 2px 6px rgba(244, 74, 34, 0.2),
+              0 0 20px rgba(244, 74, 34, 0.3)
+            `,
           }}
         >
           <span className="material-symbols-outlined mb-2 text-4xl text-[#F44A22]">
@@ -68,10 +73,15 @@ const Cube3D = () => {
 
         {/* Back */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-[#F44A22]/25 bg-black/40 text-sm font-semibold tracking-wide text-gray-300"
+          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#F44A22]/25 bg-black/40 text-sm font-semibold tracking-wide text-gray-300"
           style={{
             ...faceBase,
             transform: `rotateY(180deg) translateZ(${depth}px)`,
+            boxShadow: `
+              inset -2px -2px 6px rgba(0, 0, 0, 0.6),
+              inset 2px 2px 6px rgba(244, 74, 34, 0.15),
+              0 0 15px rgba(244, 74, 34, 0.2)
+            `,
           }}
         >
           <span className="material-symbols-outlined mb-2 text-4xl text-[#F44A22]">
@@ -82,10 +92,15 @@ const Cube3D = () => {
 
         {/* Right */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-[#F44A22]/40 bg-[#F44A22]/3 text-sm font-semibold tracking-wide text-gray-50"
+          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#F44A22]/40 bg-[#F44A22]/3 text-sm font-semibold tracking-wide text-gray-50"
           style={{
             ...faceBase,
             transform: `rotateY(90deg) translateZ(${depth}px)`,
+            boxShadow: `
+              inset -2px -2px 6px rgba(0, 0, 0, 0.5),
+              inset 2px 2px 6px rgba(244, 74, 34, 0.2),
+              0 0 18px rgba(244, 74, 34, 0.25)
+            `,
           }}
         >
           <span className="material-symbols-outlined mb-2 text-4xl text-[#F44A22]">
@@ -96,10 +111,15 @@ const Cube3D = () => {
 
         {/* Left */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-[#F44A22]/40 bg-[#F44A22]/3 text-sm font-semibold tracking-wide text-gray-50"
+          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#F44A22]/40 bg-[#F44A22]/3 text-sm font-semibold tracking-wide text-gray-50"
           style={{
             ...faceBase,
             transform: `rotateY(-90deg) translateZ(${depth}px)`,
+            boxShadow: `
+              inset -2px -2px 6px rgba(0, 0, 0, 0.5),
+              inset 2px 2px 6px rgba(244, 74, 34, 0.2),
+              0 0 18px rgba(244, 74, 34, 0.25)
+            `,
           }}
         >
           <span className="material-symbols-outlined mb-2 text-4xl text-[#F44A22]">
@@ -110,10 +130,15 @@ const Cube3D = () => {
 
         {/* Top */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-[#F44A22]/35 bg-[#F44A22]/4 text-sm font-semibold tracking-wide text-gray-50"
+          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#F44A22]/35 bg-[#F44A22]/4 text-sm font-semibold tracking-wide text-gray-50"
           style={{
             ...faceBase,
             transform: `rotateX(90deg) translateZ(${depth}px)`,
+            boxShadow: `
+              inset -2px -2px 6px rgba(0, 0, 0, 0.5),
+              inset 2px 2px 6px rgba(244, 74, 34, 0.18),
+              0 0 16px rgba(244, 74, 34, 0.22)
+            `,
           }}
         >
           <span className="material-symbols-outlined mb-2 text-4xl text-[#F44A22]">
@@ -124,10 +149,15 @@ const Cube3D = () => {
 
         {/* Bottom */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-[#F44A22]/25 bg-black/40 text-sm font-semibold tracking-wide text-gray-300"
+          className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border-2 border-[#F44A22]/25 bg-black/40 text-sm font-semibold tracking-wide text-gray-300"
           style={{
             ...faceBase,
             transform: `rotateX(-90deg) translateZ(${depth}px)`,
+            boxShadow: `
+              inset -2px -2px 6px rgba(0, 0, 0, 0.6),
+              inset 2px 2px 6px rgba(244, 74, 34, 0.15),
+              0 0 15px rgba(244, 74, 34, 0.2)
+            `,
           }}
         >
           <span className="material-symbols-outlined mb-2 text-4xl text-[#F44A22]">
