@@ -7,7 +7,7 @@ const About = () => {
   const stats = [
     {
       label: "EVENT CAPACITY",
-      value: "300–350",
+      value: "450–500",
       body: "A curated gathering of ABESEC students and participants from other colleges.",
     },
     {

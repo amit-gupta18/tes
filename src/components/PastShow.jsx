@@ -93,7 +93,7 @@ const PastShow = () => {
             {[
               { label: "EVENT HIGHLIGHTS", value: "04" },
               { label: "PAST SPEAKERS", value: "15+" },
-              { label: "EVENT CAPACITY", value: "350" },
+              { label: "EVENT CAPACITY", value: "450–500" },
               { label: "COLLEGES INVITED", value: "10+" },
             ].map((item, index) => (
               <article
