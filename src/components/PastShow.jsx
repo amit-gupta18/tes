@@ -91,10 +91,10 @@ const PastShow = () => {
           {/* Top stat row */}
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {[
-              { label: "GLOBAL SPEAKERS", value: "50+" },
-              { label: "VC CAPITAL", value: "$4.2B" },
-              { label: "WORKSHOPS", value: "24" },
-              { label: "EXPECTED GUESTS", value: "12K" },
+              { label: "EVENT HIGHLIGHTS", value: "04" },
+              { label: "PAST SPEAKERS", value: "15+" },
+              { label: "EVENT CAPACITY", value: "350" },
+              { label: "COLLEGES INVITED", value: "10+" },
             ].map((item, index) => (
               <article
                 key={item.label}
@@ -116,10 +116,10 @@ const PastShow = () => {
           <header ref={headerRef} className="mt-10 mb-6 flex items-baseline justify-between gap-4 bento-header">
             <div>
               <p className="text-sm sm:text-base font-extrabold uppercase tracking-[0.24em] text-gray-300">
-                PAST SHOW HIGHLIGHTS
+                EVENT HIGHLIGHTS
               </p>
               <p className="mt-2 text-base sm:text-lg text-gray-400">
-                Experience the energy of previous Entrepreneurship Shows.
+                Key features that make TES 4.0 a transformative experience.
               </p>
             </div>
             <p
@@ -128,7 +128,7 @@ const PastShow = () => {
                 boxShadow: "0 0 0 1px rgba(244,74,34,0.3), 0 0 20px rgba(244,74,34,0.4)"
               }}
             >
-              2023 – 2025 RECAP
+              TES 1.0 – 4.0 JOURNEY
             </p>
           </header>
 
@@ -151,14 +151,14 @@ const PastShow = () => {
 
                 <div className="pointer-events-auto absolute bottom-4 left-4 right-4 flex flex-col gap-3 text-left">
                   <span className="inline-flex w-max items-center rounded-full bg-black/70 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-white">
-                    LIVE REPLAY
+                    SPEAKER SESSIONS
                   </span>
                   <h3 className="text-lg sm:text-xl font-extrabold text-white">
-                    Main Stage 2025: The Opening.
+                    Learn from Industry Leaders
                   </h3>
                   <p className="max-w-md text-sm text-gray-300">
-                    Lights down, founders up. A packed room, a wall of sound, and
-                    the first stories that set the tone for the night.
+                    Hear inspiring stories from successful entrepreneurs including Vijendra Chauhan,
+                    Saumya Singh, and other industry veterans sharing their real-world experiences.
                   </p>
                 </div>
               </div>
@@ -180,14 +180,14 @@ const PastShow = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-black/30" />
                 <div className="relative z-10">
                   <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-gray-400">
-                    FOUNDER PITCHES
+                    PITCH GROUND
                   </p>
                   <h3 className="mt-3 text-lg sm:text-xl font-extrabold text-white">
-                    Stories behind the seed rounds.
+                    Showcase Your Startup Ideas
                   </h3>
                   <p className="mt-3 text-sm text-gray-400">
-                    Watch the pitches that secured over $70M in early funding —
-                    including the moments that almost broke.
+                    A live pitching platform where students and startups present their ideas before
+                    jury members. Learn pitch deck preparation and real-world pitching techniques.
                   </p>
                 </div>
                 <p
@@ -196,7 +196,7 @@ const PastShow = () => {
                     boxShadow: "0 0 0 1px rgba(244,74,34,0.3), 0 0 20px rgba(244,74,34,0.4)"
                   }}
                 >
-                  2024 STAGE REEL
+                  LIVE COMPETITION
                 </p>
               </article>
 
@@ -216,15 +216,15 @@ const PastShow = () => {
                   <div className="absolute inset-0 bg-linear-to-t from-[#F44A22] via-[#F44A22]/95 to-[#F44A22]/90" />
                   <div className="relative z-10">
                     <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-black/70">
-                      NETWORKING MIXER 2024
+                      BUSINESS QUIZ (B-QUIZ)
                     </p>
                     <h3 className="mt-3 text-base sm:text-lg font-extrabold">
-                      A room built for long-term collaborators.
+                      Test Your Entrepreneurial Knowledge
                     </h3>
                   </div>
                   <p className="mt-3 text-sm text-black/70 relative z-10">
-                    120 high-intent matches in one evening — founders, operators
-                    and investors paired on what they&apos;re building next.
+                    An interactive quiz powered by Mentimeter featuring live leaderboards,
+                    real-time participation, and exciting rewards for winners.
                   </p>
                 </article>
 
@@ -236,18 +236,18 @@ const PastShow = () => {
                 >
                   <div>
                     <p className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-gray-400">
-                      INNOVATION LAB
+                      PANEL DISCUSSION
                     </p>
                     <h3 className="mt-3 text-base sm:text-lg font-extrabold text-white">
-                      Hands-on demos from teams in stealth.
+                      Deep Dive into Startup Ecosystem
                     </h3>
                     <p className="mt-3 text-sm text-gray-400">
-                      A quiet corner where founders showed what they&apos;re
-                      shipping next, months before launch.
+                      Industry experts discuss funding rounds, startup challenges,
+                      and the path to building successful ventures.
                     </p>
                   </div>
                   <p className="mt-3 text-[0.65rem] uppercase tracking-[0.18em] text-gray-500">
-                    PROTOTYPES • PRIVATE FEEDBACK
+                    FOUNDERS • INVESTORS • OPERATORS
                   </p>
                 </article>
               </div>
