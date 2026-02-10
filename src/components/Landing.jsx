@@ -111,7 +111,7 @@ const Landing = () => {
                 />
               </svg>
             </span>
-            WORLD&apos;S ELITE STARTUP SUMMIT 2026
+            INSPIRE • EMPOWER • CONNECT WITH FUTURE ENTREPRENEURS
           </p>
 
           {/* Main headline */}
@@ -170,7 +170,7 @@ const Landing = () => {
           </div>
 
           {/* Primary CTA + small meta (match reference structure) */}
-          <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-center">
+          <div className="mt-6">
             <a
               className="inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-[#F44A22] px-8 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-black shadow-[0_0_50px_rgba(244,74,34,0.35)] transition hover:bg-[#f35b37] sm:w-auto"
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=Dn_YOpMfvUGU9ILDfZcciI684JB80VRGkdlg2YpjF7dUNkdGVTBRSU1ETUc3VFRKVlMzOTBBNVg1TC4u&origin=QRCode"
@@ -182,13 +182,6 @@ const Landing = () => {
                 →
               </span>
             </a>
-
-            <div className="text-left">
-              <p className="text-sm font-semibold text-white">247 Seats Left</p>
-              <p className="mt-1 text-[0.7rem] font-medium uppercase tracking-[0.2em] text-gray-500">
-                of 500 exclusive invites
-              </p>
-            </div>
           </div>
         </div>
       </section>
