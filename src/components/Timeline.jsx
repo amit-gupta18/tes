@@ -216,7 +216,7 @@ const Timeline = () => {
               </p>
               <div className="mt-4 rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.4912655644394!2d77.49916207549944!3d28.676314675637805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6732cb9ca50e0bc!2sABES%20Engineering%20College!5e0!3m2!1sen!2sin!4v1707565914000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.303299050095!2d77.44301250996898!3d28.63405367556233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee22c60837b7%3A0x7c35343eceb7bde0!2sABES%20Engineering%20College!5e1!3m2!1sen!2sin!4v1770740647918!5m2!1sen!2sin"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
@@ -225,7 +225,8 @@ const Timeline = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Event venue location map"
                   className="rounded-2xl"
-                />
+                /> 
+                {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.303299050095!2d77.44301250996898!3d28.63405367556233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee22c60837b7%3A0x7c35343eceb7bde0!2sABES%20Engineering%20College!5e1!3m2!1sen!2sin!4v1770740647918!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
               </div>
               <p className="mt-4 text-sm font-semibold text-white">
                 ABES Engineering College
