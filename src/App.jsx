@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import "./index.css";
 import Landing from "./components/Landing.jsx";
 import PastShow from "./components/PastShow.jsx";
@@ -13,6 +14,7 @@ function App() {
       <Timeline />
       <PastShow />
       <About />
+      <Analytics />
     </div>
   );
 }
